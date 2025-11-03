@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-aguazarca"
+version = "0.0.1"
+description = "Quantum Aguazarca pipeline blocks"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+qa = "aguazarca.blocks.a_frontend.cli:main"
