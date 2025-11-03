@@ -1,0 +1,225 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="HfOwxGObQ78h5nPG3g_V">
+    <mxGraphModel dx="2942" dy="1297" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-76" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="100" width="2110" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-72" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="197.5" width="220" height="432.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-69" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="197.5" width="340" height="432.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-68" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="197.5" width="120" height="222.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-61" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="370" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-60" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="610" y="187.5" width="240" height="382.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-58" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="190" y="187.5" width="410" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-57" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-95" y="205" width="270" height="355" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-52" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1750" y="430" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-42" target="mEtv3g3Ip7kDKFfoNg05-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="320" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="315" width="210" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-1" value="A: Front-end" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-2" target="mEtv3g3Ip7kDKFfoNg05-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-2" value="Parse HDL" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-3" target="mEtv3g3Ip7kDKFfoNg05-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-3" value="Normalize to small gate library" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-4" value="Build circuit graph" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="445" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-5" target="mEtv3g3Ip7kDKFfoNg05-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-5" value="Turn graph into Directed Acyclic Graph (DAG) of gates" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="50" y="445" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-6" value="B: Fault manager" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="355" y="217.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-8" target="mEtv3g3Ip7kDKFfoNg05-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="327.5" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-7" value="On each single existing net (s-a-(1&amp;amp;0))" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="225" y="332.5" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-9" value="After fault collapsing" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="345" y="337.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-10" value="Based on selected subset" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="455" y="337.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-12" value="For each target node D, we define two fan-out comput nodes: good vs faulty" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="465" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-13" value="C: Classical Analysis" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="690" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-14" target="mEtv3g3Ip7kDKFfoNg05-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-14" value="Compute controllability and observability" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="665" y="330" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-15" value="D: Reversible synthesis" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="955" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-16" value="Derive activation and propagation constraints" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="665" y="430" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-18" value="(Shrinking search space {Agrawal approach})" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="625" y="500" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-19" value="Quantum ATPG - Toolchain" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=27;" vertex="1" parent="1">
+          <mxGeometry x="780" y="120" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-20" target="mEtv3g3Ip7kDKFfoNg05-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-20" value="Synthesize good circuit reversibly" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="330" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-21" target="mEtv3g3Ip7kDKFfoNg05-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-21" value="Build faulty circuit by replicating logic up to target node." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="420" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-22" target="mEtv3g3Ip7kDKFfoNg05-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-22" value="Override target node with 1 or 0." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="530" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-24" target="mEtv3g3Ip7kDKFfoNg05-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-24" value="Compare good vs faulty by XORing output" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="640" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-25" target="mEtv3g3Ip7kDKFfoNg05-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-25" value="Phase flip on detected inputs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="730" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-26" value="Uncompute all work ancillas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="820" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-29" value="Both fault-free and faulty circuits live in SAME quantum circuit but are built separately" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="450" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-30" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="330" width="20" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-31" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="935" y="330" as="sourcePoint" />
+            <mxPoint x="935" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-32" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;(Difference propagates through fan-out cone)&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=right;" vertex="1" parent="1">
+          <mxGeometry x="870" y="530" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-33" value="E: Oracle Composer" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1260" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-35" value="OR" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="315" y="377.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-36" value="OR" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="425" y="377.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-37" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Enumerate stuck-ats&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="307.5" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-38" value="Build phase oracle on Qiskit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="330" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-39" value="F: Grover driver &amp;amp; scheduler" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1510" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-40" value="Prepare uniform superposition over n PIs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="330" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-41" target="mEtv3g3Ip7kDKFfoNg05-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="180" />
+              <mxPoint x="820" y="180" />
+              <mxPoint x="820" y="348" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-45" value="based on" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mEtv3g3Ip7kDKFfoNg05-44">
+          <mxGeometry x="-0.0458" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-41" value="Prepare constrained superposition" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="330" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-43" value="OR" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1530" y="360" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-47" target="mEtv3g3Ip7kDKFfoNg05-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-47" value="Apply needed Grover iterations&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="450" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-48" value="Measure input state vectors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="550" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEtv3g3Ip7kDKFfoNg05-49" target="mEtv3g3Ip7kDKFfoNg05-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-49" value="Verify that proposed candidates are correct (back to classical verification)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1785" y="315" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-50" value="G: Verification and reporting" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1792.5" y="212.5" width="85" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-51" value="Report performance: quibit count, Toffoli count, depth/T-depth, iterations vs success probability" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="440" width="100" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mEtv3g3Ip7kDKFfoNg05-53" value="(measuring quantum circuit complexity)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="570" width="180" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
