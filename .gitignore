@@ -1,0 +1,38 @@
+# virtual envs
+qavenv/
+.venv/
+venv/
+env/
+
+# Python caches & build metadata
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
+*.egg-info/
+.eggs/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Build & dist outputs
+build/
+dist/
+*.log
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# (Optional) EDA/Yosys outputs
+#*.aig
+#*.aag
+#*.blif
+#*.dot
+#*.ps

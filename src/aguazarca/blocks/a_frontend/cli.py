@@ -50,7 +50,7 @@ def main():
 
     elif args.cmd == "topo":
         d = json.load(open(args.in_json))
-        from qa_frontend.ir.model import CircuitIR, Node, GateType
+        from aguazarca.blocks.a_frontend.ir.model import CircuitIR, Node, GateType
         ir = CircuitIR(
             name=d["name"],
             primary_inputs=d["primary_inputs"],
