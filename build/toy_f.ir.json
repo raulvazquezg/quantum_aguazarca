@@ -1,0 +1,81 @@
+{
+  "name": "toy_f",
+  "primary_inputs": [
+    "PI0",
+    "PI1",
+    "PI2"
+  ],
+  "primary_outputs": [
+    "PO0"
+  ],
+  "nodes": [
+    {
+      "name": "PI0",
+      "type": "PI",
+      "inputs": [],
+      "attrs": {}
+    },
+    {
+      "name": "PI1",
+      "type": "PI",
+      "inputs": [],
+      "attrs": {}
+    },
+    {
+      "name": "PI2",
+      "type": "PI",
+      "inputs": [],
+      "attrs": {}
+    },
+    {
+      "name": "n4",
+      "type": "AND",
+      "inputs": [
+        "PI1",
+        "PI0"
+      ],
+      "attrs": {}
+    },
+    {
+      "name": "NOT_n4",
+      "type": "NOT",
+      "inputs": [
+        "n4"
+      ],
+      "attrs": {}
+    },
+    {
+      "name": "NOT_PI2",
+      "type": "NOT",
+      "inputs": [
+        "PI2"
+      ],
+      "attrs": {}
+    },
+    {
+      "name": "n5",
+      "type": "AND",
+      "inputs": [
+        "NOT_n4",
+        "NOT_PI2"
+      ],
+      "attrs": {}
+    },
+    {
+      "name": "NOT_n5",
+      "type": "NOT",
+      "inputs": [
+        "n5"
+      ],
+      "attrs": {}
+    },
+    {
+      "name": "PO0",
+      "type": "PO",
+      "inputs": [
+        "NOT_n5"
+      ],
+      "attrs": {}
+    }
+  ]
+}
