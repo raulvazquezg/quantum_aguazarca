@@ -1,28 +1,28 @@
 {
   "name": "toy_f",
   "primary_inputs": [
-    "PI0",
-    "PI1",
-    "PI2"
+    "A",
+    "B",
+    "C"
   ],
   "primary_outputs": [
-    "PO0"
+    "F"
   ],
   "nodes": [
     {
-      "name": "PI0",
+      "name": "A",
       "type": "PI",
       "inputs": [],
       "attrs": {}
     },
     {
-      "name": "PI1",
+      "name": "B",
       "type": "PI",
       "inputs": [],
       "attrs": {}
     },
     {
-      "name": "PI2",
+      "name": "C",
       "type": "PI",
       "inputs": [],
       "attrs": {}
@@ -31,8 +31,8 @@
       "name": "n4",
       "type": "AND",
       "inputs": [
-        "PI1",
-        "PI0"
+        "B",
+        "A"
       ],
       "attrs": {}
     },
@@ -45,10 +45,10 @@
       "attrs": {}
     },
     {
-      "name": "NOT_PI2",
+      "name": "NOT_C",
       "type": "NOT",
       "inputs": [
-        "PI2"
+        "C"
       ],
       "attrs": {}
     },
@@ -57,7 +57,7 @@
       "type": "AND",
       "inputs": [
         "NOT_n4",
-        "NOT_PI2"
+        "NOT_C"
       ],
       "attrs": {}
     },
@@ -70,7 +70,7 @@
       "attrs": {}
     },
     {
-      "name": "PO0",
+      "name": "F",
       "type": "PO",
       "inputs": [
         "NOT_n5"
