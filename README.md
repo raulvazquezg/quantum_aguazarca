@@ -1,3 +1,4 @@
+**INSTALLATION**
 We install venv
 `sudo apt-get update`
 `sudo apt-get install -y python3-venv`
@@ -16,6 +17,8 @@ To install current project into python env in dev mode (pip here reads the .toml
 
 to deactivate venv
 `deactivate`
+
+**RUNNING BLOCK A**
 
 Example to parse (Verilog-->AIGER + JSON)
 `qa parse --in examples/toy_f.v --out build/toy_f.ir.json --name toy_f`
@@ -42,6 +45,36 @@ to run a specific UNIT pytest from a single file (example) {this test only check
 
 (or to check INTEGRATION test (basically checking the pipeline with the toy eample i have with pytest))
 `pytest tests/integration/test_toy_f_end2end.py -q`
+
+This test allows me to prove functional equivalence between a .v file and and .aag using built-in equivalence tests that Yosys has (it grabs .aag file from build/ so i can edit it and make it fail if i wanted to) {example with c17 ISCAS'85 benchmark circuit}
+```
+yosys -p '
+  read_verilog examples/c17.v; prep -top c17; rename -top gold; design -stash gold
+  read_aiger   build/c17.ir.aag; prep -auto-top; rename -top gate; design -stash gate
+  design -copy-from gold -as gold gold
+  design -copy-from gate -as gate gate
+  equiv_make gold gate equiv
+  hierarchy -top equiv
+  equiv_struct
+  equiv_simple
+  equiv_induct -undef
+  equiv_status -assert
+'
+```
+
+**VISUALIZATION**
+To visualize verilog file with Yosys (example)
+`yosys -p 'read_verilog examples/toy_f.v; hierarchy -auto-top; proc; opt; clean; show'`
+OR
+`yosys -p 'read_verilog examples/toy_f.v; hierarchy -auto-top; show -format dot -prefix build/toy_v'`
+`dot -Tsvg build/toy_v.dot -o build/toy_v.svg`
+
+To visualize AAG file with Yosys (example) - [ofc verify with topological order command]
+`yosys -p 'read_aiger build/toy_f.ir.aag; hierarchy -auto-top; show -format dot -viewer xdot'`
+OR
+`yosys -p 'read_aiger build/toy_f.ir.aag; show -format dot -prefix build/toy_aig'`
+`dot -Tsvg build/toy_aig.dot -o build/toy_aig.svg`
+
 
 **Dev notes**
 aag [max var id] [PIs] [latches] [POs] [ANDs]
