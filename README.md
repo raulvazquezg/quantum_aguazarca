@@ -26,6 +26,13 @@ Example to parse (Verilog-->AIGER + JSON)
 Example to print topological order (not rlly necessary but useful later for debuggin); (could also do so with .json)
 `qa topo --in build/toy_f.ir.aag`
 
+**RUNNING BLOCK B**
+Example to list all nodes (potential fault sites)
+`python -m aguazarca.blocks.b_faultmanager.cli --ir build/toy_f.ir.json --list-sites`
+
+Example to pick fault from a listed node
+`python -m aguazarca.blocks.b_faultmanager.cli --ir build/toy_f.ir.json --pick n4 --sa sa0`
+
 **TESTING**
 
 Example to evaluate .aag output (doing manaul check tho)
