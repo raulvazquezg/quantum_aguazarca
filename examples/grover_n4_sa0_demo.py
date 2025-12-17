@@ -2,6 +2,8 @@ from qiskit import QuantumCircuit
 from qiskit_aer import AerSimulator
 from qiskit import transpile
 
+import matplotlib.pyplot as plt
+
 
 def prepare_minus(qc: QuantumCircuit, q: int):
     # |-> = (|0> - |1>)/sqrt(2)
@@ -37,19 +39,10 @@ def compute_f_from_aag(qc: QuantumCircuit, A: int, B: int, C: int,
 
     All targets (n4, not_n4, not_C, n5, F) are assumed to start at |0>.
     """
-    # n4 = A & B
     qc.ccx(A, B, n4)
-
-    # not_n4 = NOT(n4)
     compute_not_into(qc, n4, not_n4)
-
-    # not_C = NOT(C)
     compute_not_into(qc, C, not_C)
-
-    # n5 = not_n4 & not_C
     qc.ccx(not_n4, not_C, n5)
-
-    # F = NOT(n5)
     compute_not_into(qc, n5, F)
 
 
@@ -86,39 +79,31 @@ def oracle_aag_n4_sa0(qc: QuantumCircuit,
       phase kickback when detect=1
       uncompute everything
     """
-
-    # --- Compute GOOD output Fg using the AAG shape
+    # GOOD output
     compute_f_from_aag(qc, A, B, C, n4, not_n4, not_C, n5, Fg)
 
-    # --- Compute FAULTY output Ff using the same shape but with n4 stuck at 0
-    # n4_f is implicitly 0 (we don't even allocate it)
-    # so not_n4_f must be 1
-    qc.x(not_n4_f)                    # force not_n4_f = 1
-
-    # not_C already computed above (shared), so:
-    # n5_f = not_n4_f & not_C
+    # FAULTY output: n4 stuck-at-0 => not_n4_f = 1
+    qc.x(not_n4_f)
     qc.ccx(not_n4_f, not_C, n5_f)
-
-    # Ff = NOT(n5_f)
     compute_not_into(qc, n5_f, Ff)
 
-    # --- detect = Fg XOR Ff (into 'detect' which starts at 0)
+    # detect = Fg XOR Ff
     qc.cx(Fg, detect)
     qc.cx(Ff, detect)
 
-    # --- phase flip if detect==1
-    qc.cx(detect, phase)              # X|-> = -|->
+    # phase flip if detect==1 (phase ancilla is |->)
+    qc.cx(detect, phase)
 
-    # --- Uncompute detect
+    # Uncompute detect
     qc.cx(Ff, detect)
     qc.cx(Fg, detect)
 
-    # --- Uncompute FAULTY network
+    # Uncompute faulty network
     uncompute_not_into(qc, n5_f, Ff)
     qc.ccx(not_n4_f, not_C, n5_f)
-    qc.x(not_n4_f)                    # return not_n4_f to 0
+    qc.x(not_n4_f)
 
-    # --- Uncompute GOOD network (also uncomputes shared not_C)
+    # Uncompute good network
     uncompute_f_from_aag(qc, A, B, C, n4, not_n4, not_C, n5, Fg)
 
 
@@ -132,7 +117,22 @@ def diffuser_3q(qc: QuantumCircuit, A: int, B: int, C: int):
     qc.h([A, B, C])
 
 
-def main(shots=2048, iters=2):
+def plot_counts_bar(counts: dict, shots: int, title: str, out_png: str):
+    # Show all 8 outcomes in ABC order
+    outcomes = [f"{i:03b}" for i in range(8)]
+    values = [counts.get(o, 0) for o in outcomes]
+
+    plt.figure()
+    plt.bar(outcomes, values)
+    plt.xlabel("Outcome (ABC)")
+    plt.ylabel(f"Counts out of {shots} shots")
+    plt.title(title)
+    plt.tight_layout()
+    plt.savefig(out_png, dpi=300)
+    plt.show()
+
+
+def main(shots=2048, iters=1):
     # Qubit indices
     A, B, C = 0, 1, 2
 
@@ -154,7 +154,7 @@ def main(shots=2048, iters=2):
 
     qc = QuantumCircuit(13, 3)
 
-    # phase ancilla in |-> for phase kickback
+    # (Oracle convention) phase ancilla in |-> for phase kickback
     prepare_minus(qc, phase)
 
     # uniform superposition over input candidates
@@ -176,11 +176,20 @@ def main(shots=2048, iters=2):
     tqc = transpile(qc, sim)
     result = sim.run(tqc, shots=shots).result()
     counts = result.get_counts()
+
     print("Counts (ABC):", counts)
     print("Top outcome:", max(counts.items(), key=lambda kv: kv[1]))
 
-    # Save a wrapped diagram (helps with size)
+    # Save circuit diagram
     qc.draw(output="mpl", filename="figures/grover_aag_oracle.png", fold=60)
+
+    # NEW: plot bar chart + save PNG
+    plot_counts_bar(
+        counts,
+        shots=shots,
+        title=f"Grover results for n4:sa0 (iters={iters}, shots={shots})",
+        out_png="figures/grover_counts.png",
+    )
 
     return qc
 

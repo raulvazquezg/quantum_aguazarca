@@ -33,6 +33,9 @@ Example to list all nodes (potential fault sites)
 Example to pick fault from a listed node
 `python -m aguazarca.blocks.b_faultmanager.cli --ir build/toy_f.ir.json --pick n4 --sa sa0`
 
+**RUNNING minimal D-F for EECE 571I demo**
+`python examples/grover_n4_sa0_demo.py`
+
 **TESTING**
 
 Example to evaluate .aag output (doing manaul check tho)
