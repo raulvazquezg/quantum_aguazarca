@@ -1,0 +1,6 @@
+BLOCK A:
+qa parse --in examples/toy_f.v --out build/toy_f.ir.json --name toy_f
+
+
+BLOCK D-F:
+python examples/grover_n4_sa0_demo.py
